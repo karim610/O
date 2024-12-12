@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al Bahja Olives</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Al Bahja Olives</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Our Products</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Taste the Tradition</h1>
+      <p>Discover the finest olives, straight from our groves.</p>
+      <a href="#products">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Our family has been cultivating olives for generations...</p>
+    <img src="olive-grove.jpg" alt="Olive Grove">
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-card">
+      <img src="IMG/olive1.jpg" alt="Extra Virgin Olive Oil" onclick="openModal(this)">
+      <h3>Extra Virgin Olive Oil</h3>
+      <p>Cold-pressed, first-press olive oil, perfect for salads and cooking.</p>
+      <p><strong>Price: $XX</strong></p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="IMG/image2.jpg" alt="Kalamata Olives" onclick="openModal(this)">
+      <h3>Kalamata Olives</h3>
+      <p>Rich, meaty olives with a tangy flavor.</p>
+      <p><strong>Price: $XX</strong></p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="IMG/image3.jpg" alt="Green Olives" onclick="openModal(this)">
+      <h3>Green Olives</h3>
+      <p>Brined green olives, perfect for appetizers and salads.</p>
+      <p><strong>Price: $XX</strong></p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="IMG/image4.jpg" alt="Black Olives" onclick="openModal(this)">
+      <h3>Black Olives</h3>
+      <p>Naturally ripened black olives, ideal for pizza and pasta.</p>
+      <p><strong>Price: $XX</strong></p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="IMG/image5.jpg" alt="Olive Oil Soap" onclick="openModal(this)">
+      <h3>Olive Oil Soap</h3>
+      <p>Natural and moisturizing olive oil soap.</p>
+      <p><strong>Price: $XX</strong></p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +212603505815</p>
+    <a href="https://api.whatsapp.com/send?phone=+212603505815" target="_blank">Contact Us on WhatsApp</a>
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Al Bahja Olives | All Rights Reserved</p>
+  </footer>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
